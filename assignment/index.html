@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .main{
+            text-align: center;
+            height: 600px;
+            width: 700px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 5%;
+            margin-left: 30%;
+            background-color: rgb(240, 235, 235);
+        }
+        .main h1{
+            margin: 40px;
+        }
+
+        .main label , .main input{
+            margin:10px ;
+        }
+
+        .main label {
+    margin-right: 10px; /* Adjust the space to your preference */
+       }
+
+      input, select {
+    margin-bottom: 10px; /* Adjust the space to your preference */
+     }
+     .main button{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 20px;
+     }
+     .main button:hover{
+        transform: scale(1.05);
+        background-color: wheat;
+     }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    
+     <h1>Application Form</h1>
+     <label for="name">Name:</label>
+     <input type="text" class="name">
+     <label for="lastname">Last Name:</label>
+      <input type="text" class="lastname">
+     <br>
+     <br>
+     <label for="date">Date of birth:</label>
+      <input type="date" class="date">
+     <label for="age">Age:</label>
+     <input type="number" class="age">
+     <br><br>
+     <label for="gender">Gender:</label>
+     <select name="gender" id="gender">
+          <option value="Male">Male</option>
+         <option value="Female">Female</option>
+         <option value="Other">Other</option>
+      </select>
+     <label for="email">Email:</label>
+     <input type="email" class="email">
+     <br><br>
+     <label for="password">Password:</label>
+     <input type="password" class="password">
+     <label for="confirmpassword">Confirm Password:</label>
+     <input type="password" class="confirmpassword">
+     <br><br>
+     <button type="button" onclick="submitForm()" >Submit</button>
+     <div class="result"></div>
+</div>
+
+    <script src="form.js"></script>
+
+
+</body>
+</html>
