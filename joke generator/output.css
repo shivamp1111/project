@@ -1,0 +1,49 @@
+/* Custom Styles for the Joke Card */
+.joke-card {
+    width: 600px; /* Default width for larger screens */
+    background-color: white; /* Background color of the joke card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children */
+    justify-content: center; /* Center content */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 640px) {
+    .joke-card {
+        width: 90%; /* Make the width responsive on smaller screens (responsive display)*/
+    }
+}
+
+/* Body and Button Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set a clean sans-serif font */
+    background-color: #fbbf24; /* Background color of the body */
+    display: flex; /* Flexbox layout for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    font-weight: bold; /* Button font weight */
+    background-color: #fbbf24; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.2s ease; /* Smooth background transition */
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #eab308; /* Change button color on hover */
+}
+
+button:active {
+    background-color: #facc15; /* Darker yellow on button press */
+}
